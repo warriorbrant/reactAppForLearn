@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
 
-mongoose.connect('mongodb+srv://brant:password@cluster0-asttb.mongodb.net/MySecret?retryWrites=true')
+mongoose.connect('mongodb+srv://brant:secret@cluster0-asttb.mongodb.net/MySecret?retryWrites=true')
 
 mongoose.connection.once('open', function () {
   console.log('connected')
